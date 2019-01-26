@@ -1,0 +1,208 @@
+fileFormatVersion: 2
+guid: 67524d8b26dbc864093d0bf8de59c5a0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: group
+    100002: group1
+    100004: group2
+    100006: //RootNode
+    100008: MBH1OBJ_01
+    100010: MBH1OBJ_02
+    100012: MBH1OBJ_03
+    100014: MBH1OBJ_04
+    100016: MBH1OBJ_05
+    100018: MBH1OBJ_06
+    100020: MBH1OBJ_07
+    100022: Modern Brick House_1
+    100024: Modern_Brick_House_1_obj1:MBH1OBJ_01
+    100026: Modern_Brick_House_1_obj1:MBH1OBJ_02
+    100028: Modern_Brick_House_1_obj1:MBH1OBJ_03
+    100030: Modern_Brick_House_1_obj1:MBH1OBJ_04
+    100032: Modern_Brick_House_1_obj1:MBH1OBJ_05
+    100034: Modern_Brick_House_1_obj1:MBH1OBJ_06
+    100036: Modern_Brick_House_1_obj1:MBH1OBJ_07
+    100038: Modern_Brick_House_1_obj:MBH1OBJ_01
+    100040: Modern_Brick_House_1_obj:MBH1OBJ_02
+    100042: Modern_Brick_House_1_obj:MBH1OBJ_03
+    100044: Modern_Brick_House_1_obj:MBH1OBJ_04
+    100046: Modern_Brick_House_1_obj:MBH1OBJ_05
+    100048: Modern_Brick_House_1_obj:MBH1OBJ_06
+    100050: Modern_Brick_House_1_obj:MBH1OBJ_07
+    400000: group
+    400002: group1
+    400004: group2
+    400006: //RootNode
+    400008: MBH1OBJ_01
+    400010: MBH1OBJ_02
+    400012: MBH1OBJ_03
+    400014: MBH1OBJ_04
+    400016: MBH1OBJ_05
+    400018: MBH1OBJ_06
+    400020: MBH1OBJ_07
+    400022: Modern Brick House_1
+    400024: Modern_Brick_House_1_obj1:MBH1OBJ_01
+    400026: Modern_Brick_House_1_obj1:MBH1OBJ_02
+    400028: Modern_Brick_House_1_obj1:MBH1OBJ_03
+    400030: Modern_Brick_House_1_obj1:MBH1OBJ_04
+    400032: Modern_Brick_House_1_obj1:MBH1OBJ_05
+    400034: Modern_Brick_House_1_obj1:MBH1OBJ_06
+    400036: Modern_Brick_House_1_obj1:MBH1OBJ_07
+    400038: Modern_Brick_House_1_obj:MBH1OBJ_01
+    400040: Modern_Brick_House_1_obj:MBH1OBJ_02
+    400042: Modern_Brick_House_1_obj:MBH1OBJ_03
+    400044: Modern_Brick_House_1_obj:MBH1OBJ_04
+    400046: Modern_Brick_House_1_obj:MBH1OBJ_05
+    400048: Modern_Brick_House_1_obj:MBH1OBJ_06
+    400050: Modern_Brick_House_1_obj:MBH1OBJ_07
+    2100000: lambert1
+    2100002: Material
+    2300000: MBH1OBJ_01
+    2300002: MBH1OBJ_02
+    2300004: MBH1OBJ_03
+    2300006: MBH1OBJ_04
+    2300008: MBH1OBJ_05
+    2300010: MBH1OBJ_06
+    2300012: MBH1OBJ_07
+    2300014: Modern_Brick_House_1_obj1:MBH1OBJ_01
+    2300016: Modern_Brick_House_1_obj1:MBH1OBJ_02
+    2300018: Modern_Brick_House_1_obj1:MBH1OBJ_03
+    2300020: Modern_Brick_House_1_obj1:MBH1OBJ_04
+    2300022: Modern_Brick_House_1_obj1:MBH1OBJ_05
+    2300024: Modern_Brick_House_1_obj1:MBH1OBJ_06
+    2300026: Modern_Brick_House_1_obj1:MBH1OBJ_07
+    2300028: Modern_Brick_House_1_obj:MBH1OBJ_01
+    2300030: Modern_Brick_House_1_obj:MBH1OBJ_02
+    2300032: Modern_Brick_House_1_obj:MBH1OBJ_03
+    2300034: Modern_Brick_House_1_obj:MBH1OBJ_04
+    2300036: Modern_Brick_House_1_obj:MBH1OBJ_05
+    2300038: Modern_Brick_House_1_obj:MBH1OBJ_06
+    2300040: Modern_Brick_House_1_obj:MBH1OBJ_07
+    3300000: MBH1OBJ_01
+    3300002: MBH1OBJ_02
+    3300004: MBH1OBJ_03
+    3300006: MBH1OBJ_04
+    3300008: MBH1OBJ_05
+    3300010: MBH1OBJ_06
+    3300012: MBH1OBJ_07
+    3300014: Modern_Brick_House_1_obj1:MBH1OBJ_01
+    3300016: Modern_Brick_House_1_obj1:MBH1OBJ_02
+    3300018: Modern_Brick_House_1_obj1:MBH1OBJ_03
+    3300020: Modern_Brick_House_1_obj1:MBH1OBJ_04
+    3300022: Modern_Brick_House_1_obj1:MBH1OBJ_05
+    3300024: Modern_Brick_House_1_obj1:MBH1OBJ_06
+    3300026: Modern_Brick_House_1_obj1:MBH1OBJ_07
+    3300028: Modern_Brick_House_1_obj:MBH1OBJ_01
+    3300030: Modern_Brick_House_1_obj:MBH1OBJ_02
+    3300032: Modern_Brick_House_1_obj:MBH1OBJ_03
+    3300034: Modern_Brick_House_1_obj:MBH1OBJ_04
+    3300036: Modern_Brick_House_1_obj:MBH1OBJ_05
+    3300038: Modern_Brick_House_1_obj:MBH1OBJ_06
+    3300040: Modern_Brick_House_1_obj:MBH1OBJ_07
+    4300000: Modern_Brick_House_1_obj:MBH1OBJ_01
+    4300002: Modern_Brick_House_1_obj:MBH1OBJ_02
+    4300004: Modern_Brick_House_1_obj:MBH1OBJ_03
+    4300006: Modern_Brick_House_1_obj:MBH1OBJ_04
+    4300008: Modern_Brick_House_1_obj:MBH1OBJ_05
+    4300010: Modern_Brick_House_1_obj:MBH1OBJ_06
+    4300012: Modern_Brick_House_1_obj:MBH1OBJ_07
+    4300014: MBH1OBJ_01
+    4300016: MBH1OBJ_02
+    4300018: MBH1OBJ_03
+    4300020: MBH1OBJ_04
+    4300022: MBH1OBJ_05
+    4300024: MBH1OBJ_06
+    4300026: MBH1OBJ_07
+    4300028: Modern_Brick_House_1_obj1:MBH1OBJ_01
+    4300030: Modern_Brick_House_1_obj1:MBH1OBJ_02
+    4300032: Modern_Brick_House_1_obj1:MBH1OBJ_03
+    4300034: Modern_Brick_House_1_obj1:MBH1OBJ_04
+    4300036: Modern_Brick_House_1_obj1:MBH1OBJ_05
+    4300038: Modern_Brick_House_1_obj1:MBH1OBJ_06
+    4300040: Modern_Brick_House_1_obj1:MBH1OBJ_07
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
