@@ -7,9 +7,6 @@ public class PlayerMotor : MonoBehaviour{
     private Camera cam;
 
     [SerializeField]
-    private GameObject bulletSpawn;
-
-    [SerializeField]
     private float jumpForce = 200f;
 
     private Vector3 velocity = Vector3.zero;
