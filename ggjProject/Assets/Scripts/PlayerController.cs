@@ -34,9 +34,12 @@ public class PlayerController : MonoBehaviour{
         
         //Calcular rotacao da camera como 3d vector
         float xRot = Input.GetAxisRaw("Mouse Y");
-        Vector3 cameraRotation = new Vector3(xRot, 0f, 0f) * mouseSensitivity;
-        motor.RotateCamera(cameraRotation);
+        float cameraRotationX = xRot * mouseSensitivity; 
 
+        //aplicando a rotacao calculada
+        motor.RotateCamera(cameraRotationX);
+
+        //pular se ainda nao estiver pulando
         if (!isJumping) {
             if (Input.GetKeyDown(KeyCode.Space)) {
                 isJumping = true;
