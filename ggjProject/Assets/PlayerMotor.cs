@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMotor : MonoBehaviour{
@@ -7,10 +6,13 @@ public class PlayerMotor : MonoBehaviour{
     [SerializeField]
     private Camera cam;
 
+    [SerializeField]
+    private float jumpForce = 200f;
+
     private Vector3 velocity = Vector3.zero;
     private Vector3 rotation = Vector3.zero;
     private Vector3 cameraRotation = Vector3.zero;
-
+    
     private Rigidbody rb;
     
     void Start() {
@@ -30,9 +32,14 @@ public class PlayerMotor : MonoBehaviour{
         cameraRotation = _cameraRotation;
     }
 
+    public void PerformJump() {
+        rb.AddForce(0f, jumpForce * Time.deltaTime, 0f, ForceMode.VelocityChange);
+    }
+
     private void FixedUpdate() {
         PerformMovement();
         PerformRotation();
+
     }
 
     private void PerformMovement() {
@@ -50,6 +57,14 @@ public class PlayerMotor : MonoBehaviour{
         if(cam != null) {
             cam.transform.Rotate(-cameraRotation);
         }
+    }
+
+    private void OnCollisionEnter(Collision collision) {
+
+        PlayerController pc = GetComponent<PlayerController>();
+        if (pc.isJumping && collision.collider.tag == "Ground")
+            pc.isJumping = false;
+
     }
 
 }

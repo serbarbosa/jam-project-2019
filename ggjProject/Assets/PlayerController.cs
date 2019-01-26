@@ -5,9 +5,11 @@ public class PlayerController : MonoBehaviour{
     [SerializeField]//aparece no inspector mesmo sendo private
     private float speed = 7f;
     [SerializeField]
-    private float mouseSensitivity = 3f;
+    private float mouseSensitivity = 3f; 
 
     private PlayerMotor motor;
+
+    public bool isJumping = false;
 
     void Start() {
         motor = GetComponent<PlayerMotor>();
@@ -34,5 +36,13 @@ public class PlayerController : MonoBehaviour{
         float xRot = Input.GetAxisRaw("Mouse Y");
         Vector3 cameraRotation = new Vector3(xRot, 0f, 0f) * mouseSensitivity;
         motor.RotateCamera(cameraRotation);
+
+        if (!isJumping) {
+            if (Input.GetKeyDown(KeyCode.Space)) {
+                isJumping = true;
+                motor.PerformJump();
+            }
+        }
+        
     }
 }
