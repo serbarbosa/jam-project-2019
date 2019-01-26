@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Ground
   - Monster
-  - Bullet
   layers:
   - Default
   - TransparentFX
