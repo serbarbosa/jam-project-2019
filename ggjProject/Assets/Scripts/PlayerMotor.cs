@@ -7,6 +7,9 @@ public class PlayerMotor : MonoBehaviour{
     private Camera cam;
 
     [SerializeField]
+    private GameObject bulletSpawn;
+
+    [SerializeField]
     private float jumpForce = 200f;
 
     private Vector3 velocity = Vector3.zero;
@@ -64,6 +67,7 @@ public class PlayerMotor : MonoBehaviour{
             currCameraRotationX = Mathf.Clamp(currCameraRotationX, -cameraRotationLimit, cameraRotationLimit);
 
             cam.transform.localEulerAngles = new Vector3(currCameraRotationX, 0f, 0f);
+            
         }
     }
 

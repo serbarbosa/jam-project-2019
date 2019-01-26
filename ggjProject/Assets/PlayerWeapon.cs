@@ -6,7 +6,7 @@ public class PlayerWeapon{
     public string name = "cubed gun";
 
     public float damage = 10f;
-    public float range = 100f;
+    public float range = 20f;
     public float cooldown = 3f;
 
     public float nextTimeToFire = 0f;

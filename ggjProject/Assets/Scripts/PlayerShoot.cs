@@ -3,6 +3,8 @@
 public class PlayerShoot : MonoBehaviour{
 
     public PlayerWeapon weapon;
+    public GameObject Bullet;
+    public GameObject bulletSpawn;
 
     [SerializeField]
     private Camera cam; //necessario ter referencia para o centro da camera permitindo gerar o raio do tiro
@@ -22,24 +24,16 @@ public class PlayerShoot : MonoBehaviour{
             weapon.nextTimeToFire = Time.time + 1f / weapon.cooldown;
             Shoot();
         }
-        
     }
 
     private void Shoot() {
 
         weapon.muzzleFlash.Play();
 
-        //variavel que ira armazenar objeto atingido
-        RaycastHit hit;
-        //verificando se acertou alguma coisa
-        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, weapon.range, mask)) {
-            Debug.Log("We hit" + hit.collider.name);
+        GameObject bullet = Instantiate(Bullet, bulletSpawn.transform.position , cam.transform.rotation);
+        Rigidbody rb = bullet.GetComponent<Rigidbody>();
 
-            Target target = hit.transform.GetComponent<Target>();
-            if(target != null) {
-                target.TakeDamage(weapon.damage);
-            }
-        }
+        rb.AddForce(cam.transform.forward * weapon.range, ForceMode.VelocityChange);
     }
 
 }

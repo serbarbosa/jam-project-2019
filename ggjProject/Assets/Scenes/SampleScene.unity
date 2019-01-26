@@ -733,6 +733,9 @@ MonoBehaviour:
     cooldown: 3
     nextTimeToFire: 0
     muzzleFlash: {fileID: 1098120557}
+    bulletExit: {x: 0, y: 0, z: 0}
+  Bullet: {fileID: 2566130920271305116, guid: 97b0f87fa5374eb469f611d786949ea5, type: 3}
+  bulletExit: {x: 0, y: 0, z: 0}
   cam: {fileID: 1439552692}
   mask:
     serializedVersion: 2
@@ -6222,7 +6225,7 @@ GameObject:
   - component: {fileID: 1987471177}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
