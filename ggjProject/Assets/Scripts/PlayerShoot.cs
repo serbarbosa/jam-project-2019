@@ -18,17 +18,27 @@ public class PlayerShoot : MonoBehaviour{
     }
 
     private void Update() {
-        if(Input.GetButtonDown("Fire1")) {
+        if(Input.GetButton("Fire1") && Time.time > weapon.nextTimeToFire) {
+            weapon.nextTimeToFire = Time.time + 1f / weapon.cooldown;
             Shoot();
         }
+        
     }
 
     private void Shoot() {
+
+        weapon.muzzleFlash.Play();
+
         //variavel que ira armazenar objeto atingido
         RaycastHit hit;
         //verificando se acertou alguma coisa
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, weapon.range, mask)) {
             Debug.Log("We hit" + hit.collider.name);
+
+            Target target = hit.transform.GetComponent<Target>();
+            if(target != null) {
+                target.TakeDamage(weapon.damage);
+            }
         }
     }
 

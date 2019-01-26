@@ -7,6 +7,10 @@ public class PlayerWeapon{
 
     public float damage = 10f;
     public float range = 100f;
-    public float cooldown = 10f;
+    public float cooldown = 3f;
+
+    public float nextTimeToFire = 0f;
+
+    public ParticleSystem muzzleFlash;
 
 }
