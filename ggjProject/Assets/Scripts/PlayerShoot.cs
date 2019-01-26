@@ -30,7 +30,7 @@ public class PlayerShoot : MonoBehaviour{
 
         weapon.muzzleFlash.Play();
 
-        GameObject bullet = Instantiate(Bullet, bulletSpawn.transform.position , cam.transform.rotation);
+        GameObject bullet = Instantiate(Bullet, bulletSpawn.transform.position, cam.transform.rotation);
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
 
         rb.AddForce(cam.transform.forward * weapon.range, ForceMode.VelocityChange);
