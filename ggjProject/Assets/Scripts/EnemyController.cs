@@ -16,7 +16,8 @@ public class EnemyController : MonoBehaviour{
 
     // Update is called once per frame
     void Update(){
-        MoveToHouse();
+        if(agent.enabled)
+            MoveToHouse();
     }
 
     public void MoveToHouse() {
@@ -37,8 +38,10 @@ public class EnemyController : MonoBehaviour{
 
     private void Die() {
         Rigidbody rb = GetComponent<Rigidbody>();
+
+        agent.enabled = false;
         rb.mass = 5f;
-        rb.AddExplosionForce(10000f, rb.position/2, 20f);
+        rb.AddExplosionForce(2500f, rb.position + new Vector3(0.1f,-0.5f,0.1f), 6f);
         transform.Rotate(0f, 0f, 15f);
 
         Destroy(this.gameObject, 2.3f);
