@@ -41,7 +41,7 @@ public class EnemyController : MonoBehaviour{
 
         agent.enabled = false;
         rb.mass = 5f;
-        rb.AddExplosionForce(2500f, rb.position + new Vector3(0.1f,-0.5f,0.1f), 6f);
+        rb.AddExplosionForce(70000f*Time.deltaTime, rb.position + new Vector3(0.1f,-0.5f,0.1f), 6f);
         transform.Rotate(0f, 0f, 15f);
 
         Destroy(this.gameObject, 2.3f);
